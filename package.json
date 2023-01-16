@@ -1,0 +1,43 @@
+{
+  "name": "nestjs-event-sourcing-cqrs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prebuild": "rm -rf dist",
+    "build": "tsc -p tsconfig.json",
+    "prepublish:npm": "npm run build",
+    "publish:npm": "npm publish --access public",
+    "prepublish:next": "npm run build",
+    "publish:next": "npm publish --access public --tag next",
+    "lint": "eslint \"{src,test}/**/*.ts\" --fix && npm run prettier",
+    "prettier": "prettier --write 'src/*.{ts, js}'"
+  },
+  "author": "Asutosh Singh",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^18.11.18",
+    "eventstore": "^1.15.5",
+    "mongodb": "^4.13.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.4.2",
+    "@commitlint/config-conventional": "^17.4.2",
+    "@nestjs/common": "^9.2.1",
+    "@nestjs/core": "^9.2.1",
+    "@nestjs/cqrs": "^9.0.1",
+    "@nestjs/platform-express": "^9.2.1",
+    "@typescript-eslint/eslint-plugin": "^5.48.2",
+    "@typescript-eslint/parser": "^5.48.2",
+    "eslint": "^8.32.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-import": "^2.27.5",
+    "husky": "^8.0.3",
+    "prettier": "^2.8.3",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^7.8.0",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.1.2",
+    "typescript": "^4.9.4"
+  }
+}
