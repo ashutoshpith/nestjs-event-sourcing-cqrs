@@ -15,6 +15,7 @@ export type TQuery = {
  * @param {Array} events the events (from store)
  * @constructor
  */
+
 export class EventStream {
   public streamId: string;
   public aggregateId: string;
