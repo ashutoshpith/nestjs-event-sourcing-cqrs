@@ -17,7 +17,12 @@
   "license": "ISC",
   "dependencies": {
     "@types/node": "^18.11.18",
+    "async": "^3.2.4",
+    "dottie": "^2.0.2",
+    "dotty": "^0.1.2",
+    "events": "^3.3.0",
     "eventstore": "^1.15.5",
+    "lodash": "^4.17.21",
     "mongodb": "^4.13.0"
   },
   "devDependencies": {
@@ -27,6 +32,10 @@
     "@nestjs/core": "^9.2.1",
     "@nestjs/cqrs": "^9.0.1",
     "@nestjs/platform-express": "^9.2.1",
+    "@types/async": "^3.2.16",
+    "@types/dottie": "^2.0.4",
+    "@types/events": "^3.0.0",
+    "@types/lodash": "^4.14.191",
     "@typescript-eslint/eslint-plugin": "^5.48.2",
     "@typescript-eslint/parser": "^5.48.2",
     "eslint": "^8.32.0",
