@@ -1,5 +1,6 @@
 import { sortBy, isArray, each } from "lodash";
 import { Event } from "./event";
+import { EventStore } from "./event-store";
 
 export type TQuery = {
   aggregateId: string;
@@ -25,7 +26,7 @@ export class EventStream {
   public lastRevision: number;
 
   constructor(
-    public eventstore: any,
+    public eventstore: EventStore,
     public query: TQuery,
     public events: Event[]
   ) {
